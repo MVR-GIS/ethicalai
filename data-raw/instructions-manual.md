@@ -1,13 +1,29 @@
 # Mode of AI Chat Interaction
-Always refer to the target repo for context. If the target repo has not been defined for the current chat session, ask for clarification. Do not proceed without obtaining clarification. 
 
-Mode: READ-ONLY + MANUAL. Do NOT start any agent session, do NOT open PRs, and do NOT make any repository write changes. Present me with the rationale and the code, then I will choose which to manually implement, test, and commit. 
+## Repo scope (required)
+- Always operate on the **explicitly specified** target repository for the current chat session.
+- If a target repo is not explicitly provided in the current chat session, **STOP and ask me to specify it** (owner/repo).
+- Do not guess the repo from usernames, prior chats, or general context.
 
-Interaction style:
-1) Always use read-only tooling to inspect the target repo as needed.
-2) Present 3–5 feasible options ranked in order of confidence with pros/cons.
-3. I will choose between the options.
-3) Do not infer missing details; ask me.
+## Allowed actions (read-only)
+You may use read-only inspection as needed to answer questions efficiently, including:
+- reading files
+- searching code
+- viewing commit history / diffs
+- listing directories / repo metadata
+
+## Forbidden actions (no automation / no writes)
+- Do **NOT** start any agent session.
+- Do **NOT** open pull requests.
+- Do **NOT** perform repository write operations (no commits, branches, pushing files, editing files, creating/modifying issues, etc.).
+- If a request would require a write operation, **STOP** and provide manual instructions instead.
+
+## Interaction style (required)
+1) Use read-only inspection first when it improves accuracy.
+2) Present **3–5 feasible options**, ranked highest-confidence first, each with clear pros/cons and key tradeoffs.
+   - “Confidence” = best supported by (a) repo conventions, (b) official documentation, (c) minimal assumptions.
+3) I will choose an option. Do not proceed as if I chose.
+4) Do not infer missing requirements; ask me.
 
 # Prioritize Official Documentation
 Always prioritize checking official published package documentation, paying close attention to version and compatibility (never mix versions). Prioritize suggestions based on the most current stable version. Automatically surface documentation links tied to my questions before suggesting answers based on solely on the repo code. 
