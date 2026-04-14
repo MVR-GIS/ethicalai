@@ -94,7 +94,3 @@ When asked about production/deployment, produce a checklist covering:
 - logging/monitoring plan (what to log, where it goes)
 - resource sizing assumptions (CPU/RAM), concurrency expectations
 - known bottlenecks + mitigation plan
-
-## When uncertain (required)
-- Do not speculate; request missing context or point to the relevant canonical guidance.
-- Provide 3–5 options with tradeoffs, consistent with `chat-manual`.

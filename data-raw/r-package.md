@@ -83,14 +83,14 @@
 - Guard against non-standard evaluation pitfalls; document NSE behavior clearly if used.
 
 ## Reproducibility & audit trail (required)
-- Recommend workflows that improve reproducibility and review:
-  - explicit version constraints when needed,
-  - changelog/NEWS updates for user-visible changes,
-  - clear commit/PR narratives (even if the user applies manually).
-- If the package supports regulated or review-heavy contexts, prefer changes that increase traceability (tests, docs, provenance notes).
+- For user-visible changes, require an update to `NEWS.md` with a concise migration note when applicable.
+- When adding data objects or generated artifacts, require a reproducible build path (e.g., `data-raw/` scripts) and document provenance in package docs.
+- Prefer changes that increase reviewable evidence inside the package boundary:
+  - tests that demonstrate intended behavior,
+  - documentation/examples that match actual behavior,
+  - explicit version constraints only when necessary (and justified).
 
 ## When uncertain (required)
-- Do not speculate when canonical guidance exists.
 - If multiple valid approaches exist, present them as options with tradeoffs and cite the relevant R Packages topic/section by name (and link if needed).
 
 ## Output expectations (required)

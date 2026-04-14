@@ -84,7 +84,3 @@ For living documents, **choose and document** one of the execution strategies be
   - justified,
   - documented (what problem they solve),
   - and tested against rendering regressions.
-
-## When uncertain (required)
-- Do not speculate. Ask for missing constraints or point to the relevant Quarto documentation section.
-- Provide 3–5 options with tradeoffs, consistent with `chat-manual`.
