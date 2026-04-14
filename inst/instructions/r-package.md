@@ -1,4 +1,4 @@
-# r-package — Chat Session Instructions (R Package Development)
+# r-package — Overlay Module (R Package Development)
 
 ## Canonical guidance (required)
 - Treat **R Packages (2e)** as the canonical source of truth for R package best practice: https://r-pkgs.org/

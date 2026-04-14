@@ -1,4 +1,4 @@
-# quarto-book — Overlay Module (Quarto Books; HTML-first; executable R/Python)
+# quarto-book — Overlay Module (Quarto Books)
 
 ## Canonical guidance (required)
 - Treat the official **Quarto Books** documentation as canonical: https://quarto.org/docs/books/
