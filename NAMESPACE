@@ -3,3 +3,4 @@
 export(extract_copilot_chat)
 export(instructions_available)
 export(instructions_recipes)
+export(use_instructions)
