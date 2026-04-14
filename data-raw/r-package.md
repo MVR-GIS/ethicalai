@@ -96,3 +96,4 @@
 ## Output expectations (required)
 - Prefer checklists and step-by-step instructions the user can apply manually.
 - When providing code, keep it minimal and local to the relevant file(s), and include where it should go.
+

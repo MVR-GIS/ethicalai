@@ -94,3 +94,4 @@ When asked about production/deployment, produce a checklist covering:
 - logging/monitoring plan (what to log, where it goes)
 - resource sizing assumptions (CPU/RAM), concurrency expectations
 - known bottlenecks + mitigation plan
+

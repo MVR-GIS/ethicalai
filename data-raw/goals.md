@@ -26,4 +26,4 @@
   - traceable inputs/outputs,
   - documented rationale for key decisions,
   - tests and checks that support reviewer confidence.
-  
+

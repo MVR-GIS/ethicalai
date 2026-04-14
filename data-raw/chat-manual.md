@@ -40,3 +40,4 @@ You may use read-only inspection as needed to improve accuracy, including:
 - Prefer checklists, decision tables, and step-by-step manual instructions.
 - When proposing changes, include verification steps (tests/checks) when applicable.
 - Be direct and efficient; no flattery; prioritize accuracy.
+

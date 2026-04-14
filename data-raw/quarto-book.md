@@ -84,3 +84,4 @@ For living documents, **choose and document** one of the execution strategies be
   - justified,
   - documented (what problem they solve),
   - and tested against rendering regressions.
+
