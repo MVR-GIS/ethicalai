@@ -1,8 +1,8 @@
 ---
-title: "Composing reproducible chat instructions"
+title: "Reproducible chat instructions"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Composing reproducible chat instructions}
+  %\VignetteIndexEntry{Reproducible chat instructions}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -21,7 +21,8 @@ This vignette shows how to:
 
 - discover which instruction modules are shipped with `{ethicalai}`,
 - use recommended compositions (“recipes”),
-- write selected instruction files into a local folder (e.g. `dev/instructions/`) so future chat sessions are reproducible.
+- write selected instruction files into a local folder (e.g. `dev/instructions/`) so future chat sessions are reproducible,
+- use the `CHAT_INSTRUCTIONS.md` entrypoint to ensure chats follow the intended instruction modules.
 
 ## Why instruction modules?
 
@@ -91,17 +92,31 @@ You can inspect the written files to confirm what guidance was used:
 cat(readLines(file.path(dest, "chat-manual.md"), warn = FALSE)[1:10], sep = "\n")
 ```
 
+## The `CHAT_INSTRUCTIONS.md` entrypoint
+
+Once your selected modules have been written to `dev/instructions/`, a chat session can start from a single entrypoint file:
+
+- `dev/instructions/CHAT_INSTRUCTIONS.md`
+
+The entrypoint file documents:
+- which instruction modules apply to this repository, and
+- the order they should be read/applied.
+
+This “entrypoint” pattern makes it easy to start a new chat session reproducibly: you refer to **one file**, and that file declares the selected modules.
+
 ## A practical workflow
 
 A typical “start of day” workflow might look like:
 
 1. Choose a composition:
    - for Quarto technical manuals: `c("chat-manual", "goals", "quarto-book", "user-manual")`
-   - for golem apps: `c("chat-manual", "goals", "r-package", "shiny-golem")`
-2. Write them into the project:
+   - for Shiny golem apps: `c("chat-manual", "goals", "r-package", "shiny-golem")`
+2. Write the modules into the project:
    - `use_instructions(spec)`
-3. Keep them under version control (recommended):
+3. Keep the resulting files under version control:
    - commit `dev/instructions/*.md` so reviewers can see exactly what guidance governed the chat session.
+4. Start future chat sessions from the entrypoint:
+   - “Read `dev/instructions/CHAT_INSTRUCTIONS.md` and follow the selected instruction modules.”
 
 ## Notes on validation
 

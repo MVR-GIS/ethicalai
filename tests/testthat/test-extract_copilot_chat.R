@@ -59,7 +59,7 @@ test_that("test helper creates valid mock zip", {
   dir.create(temp_extract)
   on.exit(unlink(temp_extract, recursive = TRUE), add = TRUE)
   
-  unzip(zip_path, exdir = temp_extract)
+  utils::unzip(zip_path, exdir = temp_extract)
   md_files <- list.files(temp_extract, pattern = "\\.md$", recursive = FALSE)
   expect_true(length(md_files) > 0)
 })

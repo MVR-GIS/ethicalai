@@ -120,7 +120,7 @@ extract_copilot_chat <- function(zip_path,
   on.exit(unlink(temp_dir, recursive = TRUE), add = TRUE)
   
   # Unzip archive ----
-  unzip(zip_path, exdir = temp_dir, overwrite = TRUE)
+  utils::unzip(zip_path, exdir = temp_dir, overwrite = TRUE)
   
   # Find main .md file in root of extracted archive ----
   # (not in subdirectories - those are code suggestions)
@@ -145,7 +145,7 @@ extract_copilot_chat <- function(zip_path,
   if (!quiet) {
     if (file.exists(output_path)) {
       message(
-        "✓ Updated session transcript: ", output_filename, "\n",
+        "U+2705 Updated session transcript: ", output_filename, "\n",
         "  Session date: ", date_str,
         if (!is.null(topic)) paste0("\n  Topic: ", topic) else "",
         if (backup && file.exists(file.path(backup_dir, list.files(backup_dir, pattern = date_str)[1]))) 
