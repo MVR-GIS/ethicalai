@@ -1,5 +1,5 @@
 # Initialize an R package at the root of an existing git repo.
-# Run from: C:/workspace/MVR-GIS/ethicalai
+# Run from: C:/workspace/MVR-GIS/reproducibleai
 
 if (!requireNamespace("usethis", quietly = TRUE)) install.packages("usethis")
 if (!requireNamespace("fs", quietly = TRUE)) install.packages("fs")
@@ -10,8 +10,8 @@ usethis::create_package(".", open = FALSE)
 
 # Fill in the basics (edit the placeholders)
 usethis::use_description(fields = list(
-  Package = "ethicalai",   # must be a valid R package name
-  Title   = "ethicalai",
+  Package = "reproducibleai",   # must be a valid R package name
+  Title   = "reproducibleai",
   `Authors@R` = 'person("First", "Last", email = "you@example.com", role = c("aut", "cre"))'
 ))
 

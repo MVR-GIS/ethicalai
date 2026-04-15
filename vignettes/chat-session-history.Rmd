@@ -37,7 +37,7 @@ A typical workflow looks like:
 ## Setup
 
 ```{r}
-library(ethicalai)
+library(reproducibleai)
 ```
 
 ## A runnable example (using a synthetic export zip)

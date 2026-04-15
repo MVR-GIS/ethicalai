@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(ethicalai)
+library(reproducibleai)
 
-test_check("ethicalai")
+test_check("reproducibleai")

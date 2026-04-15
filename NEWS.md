@@ -1,3 +1,3 @@
-# ethicalai (development version)
+# reproducibleai
 
-* Initial CRAN submission.
+* .

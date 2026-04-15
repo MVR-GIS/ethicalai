@@ -13,7 +13,7 @@
 instructions_available <- function(include_path = FALSE) {
   stopifnot(is.logical(include_path), length(include_path) == 1)
 
-  dir <- system.file("instructions", package = "ethicalai")
+  dir <- system.file("instructions", package = "reproducibleai")
   if (!nzchar(dir) || !dir.exists(dir)) {
     # This should not happen if inst/instructions is shipped correctly,
     # but the error message should be explicit.

@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 This vignette shows how to:
 
-- discover which instruction modules are shipped with `{ethicalai}`,
+- discover which instruction modules are shipped with `{reproducibleai}`,
 - use recommended compositions (“recipes”),
 - write selected instruction files into a local folder (e.g. `dev/instructions/`) so future chat sessions are reproducible,
 - use the `CHAT_INSTRUCTIONS.md` entrypoint to ensure chats follow the intended instruction modules.
@@ -38,7 +38,7 @@ A reproducible chat session needs two things:
 Use `instructions_available()` to see what modules are installed with the package:
 
 ```{r}
-library(ethicalai)
+library(reproducibleai)
 
 instructions_available()
 ```

@@ -18,7 +18,7 @@ test_that("use_instructions() writes selected modules and CHAT_INSTRUCTIONS.md",
   )
 
   # Content should match installed sources for module files
-  src_dir <- system.file("instructions", package = "ethicalai")
+  src_dir <- system.file("instructions", package = "reproducibleai")
   expect_true(nzchar(src_dir))
 
   expect_identical(

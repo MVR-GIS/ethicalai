@@ -14,21 +14,21 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ethicalai
+# reproducibleai
 
 <!-- badges: start -->
-[![Codecov test coverage](https://codecov.io/gh/MVR-GIS/ethicalai/graph/badge.svg)](https://app.codecov.io/gh/MVR-GIS/ethicalai)
+[![Codecov test coverage](https://codecov.io/gh/MVR-GIS/reproducibleai/graph/badge.svg)](https://app.codecov.io/gh/MVR-GIS/reproducibleai)
 <!-- badges: end -->
 
-The goal of ethicalai is to ...
+The goal of reproducibleai is to ...
 
 ## Installation
 
-You can install the development version of ethicalai from [GitHub](https://github.com/) with:
+You can install the development version of reproducibleai from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("pak")
-pak::pak("MVR-GIS/ethicalai")
+pak::pak("MVR-GIS/reproducibleai")
 ```
 
 
