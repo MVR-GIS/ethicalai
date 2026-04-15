@@ -8,6 +8,7 @@ use_instructions(
   spec,
   dest_dir = "dev/instructions",
   overwrite = TRUE,
+  write_entrypoint = TRUE,
   quiet = FALSE
 )
 }
@@ -17,15 +18,20 @@ use_instructions(
 
 \item{dest_dir}{Character. Destination directory (default: "dev/instructions").}
 
-\item{overwrite}{Logical. Overwrite existing files? (default: TRUE).}
+\item{overwrite}{Logical. Overwrite existing module files? (default: TRUE).
+Note: the entrypoint file \code{CHAT_INSTRUCTIONS.md} is always overwritten.}
+
+\item{write_entrypoint}{Logical. Write \code{CHAT_INSTRUCTIONS.md}? (default: TRUE).}
 
 \item{quiet}{Logical. Suppress informational messages? (default: FALSE).}
 }
 \value{
-Character vector of written file paths (invisibly).
+Character vector of written file paths (invisibly), including the
+entrypoint file when \code{write_entrypoint = TRUE}.
 }
 \description{
 Copies instruction modules shipped with the package (from \verb{inst/instructions/})
 into a local folder (default: \code{dev/instructions}) for reference in
-reproducible chat sessions.
+reproducible chat sessions. Also writes an entrypoint file
+(\code{CHAT_INSTRUCTIONS.md}) describing the selected recipe and read order.
 }
