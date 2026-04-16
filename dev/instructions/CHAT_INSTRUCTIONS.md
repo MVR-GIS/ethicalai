@@ -1,6 +1,6 @@
 # Chat instructions for this repository (start here)
 
-This file is the entrypoint for “instruction modules” that govern a reproducible chat session for this repository.
+This file is the entrypoint for **instruction modules** that govern a reproducible chat session for this repository.
 
 ## How to start a new chat session
 In your first message, specify the target GitHub repository and direct the assistant to follow these instructions.
@@ -8,7 +8,7 @@ In your first message, specify the target GitHub repository and direct the assis
 Suggested prompt template:
 
 > Target repo: OWNER/REPO  
-> Read `dev/instructions/CHAT_INSTRUCTIONS.md` and follow the instruction modules listed under “Selected instruction modules (read in order)”.
+> Read `dev/instructions/CHAT_INSTRUCTIONS.md` and follow the instruction modules listed under **Selected instruction modules (read in order)**.
 
 ## Instruction model used here (base + overlays)
 We use a composable instruction system:
