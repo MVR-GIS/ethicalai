@@ -9,3 +9,6 @@ reproducibleai::extract_copilot_chat(file.path(
 )
 
 
+## Update docs
+pkgdown::build_site()
+
