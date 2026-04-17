@@ -6,25 +6,18 @@
 <!-- badges: start -->
 
 [![Codecov test
-coverage](https://codecov.io/gh/MVR-GIS/reproducibleai/graph/badge.svg)](https://app.codecov.io/gh/MVR-GIS/reproducibleai)[![Lifecycle:
+coverage](https://codecov.io/gh/MVR-GIS/reproducibleai/graph/badge.svg)](https://app.codecov.io/gh/MVR-GIS/reproducibleai)
+[![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle)
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![License:
 CC0](https://img.shields.io/badge/license-CC0-blue.svg)](http://choosealicense.com/licenses/cc0-1.0/)
+<!-- badges: end -->
 
 ## Description
 
-An R package of tools to help teams adopt a reproducible workflow for
-AI-assisted projects. This package contains a set of tools to assist
-data science professionals adopt efficient workflows during the early
-stages of AI adoption. We hold the opinionated view that the ethical use
-of AI requires data scientists to make well-informed, concious decisions
-throughout the analysis process. These tools are a work in progress and
-designed to help our team experiment with developing new methodologies
-for AI-assisted workflows. These tools help to define repeatable
-framework of chat instructions between sessions and across teams. Tools
-are provided to create a transparent audit trail to evaluate the of AI.
+{reproducibleai}
 
 **Core ideas:**
 
@@ -74,11 +67,7 @@ You can install the development version from GitHub with:
 <!-- -->
 
     use_instructions(recipes$r_package)
-    #> Wrote: dev/instructions/chat-manual.md
-    #> Wrote: dev/instructions/goals.md
-    #> Wrote: dev/instructions/r-package.md
-    #> Wrote: dev/instructions/CHAT_INSTRUCTIONS.md
-    # writes into dev/instructions/ by default, including CHAT_INSTRUCTIONS.md
+    # writes into dev/instructions/ by default
 
 ------------------------------------------------------------------------
 

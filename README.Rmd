@@ -17,10 +17,14 @@ knitr::opts_chunk$set(
 # reproducibleai
 
 <!-- badges: start -->
-[![Codecov test coverage](https://codecov.io/gh/MVR-GIS/reproducibleai/graph/badge.svg)](https://app.codecov.io/gh/MVR-GIS/reproducibleai)[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle) [![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) [![License: CC0](https://img.shields.io/badge/license-CC0-blue.svg)](http://choosealicense.com/licenses/cc0-1.0/)
+[![Codecov test coverage](https://codecov.io/gh/MVR-GIS/reproducibleai/graph/badge.svg)](https://app.codecov.io/gh/MVR-GIS/reproducibleai)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle) 
+[![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) 
+[![License: CC0](https://img.shields.io/badge/license-CC0-blue.svg)](http://choosealicense.com/licenses/cc0-1.0/)
+<!-- badges: end -->
 
 ## Description
-`r read.dcf("DESCRIPTION")[, "Description"]`
+{reproducibleai} 
 
 **Core ideas:**
 
@@ -66,9 +70,9 @@ recipes$r_package
 
 3) Write instructions into your project
 
-```{r}
+```{r eval=FALSE}
 use_instructions(recipes$r_package)
-# writes into dev/instructions/ by default, including CHAT_INSTRUCTIONS.md
+# writes into dev/instructions/ by default
 ```
 
 ------------------------------------------------------------------------
