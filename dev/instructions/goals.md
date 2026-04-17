@@ -27,3 +27,15 @@
   - documented rationale for key decisions,
   - tests and checks that support reviewer confidence.
 
+## Human in the loop (required)
+### Substantive decisions (definition; required)
+A **substantive decision** is any choice that is reasonably likely to cause a **material change** in:
+- any values used in **formal deliverables** (externally reported tables/figures/maps/metrics/rankings/classifications), or
+- the interpretation, conclusions, or recommendations presented in those deliverables, or
+- the risk/compliance posture of the work.
+
+**Material change (default standard):**
+- The AI platform may propose a default materiality threshold (e.g., “5%”, “top-10 membership changes”, “pass/fail flips”),
+  but it must ask the user to **confirm** the threshold before using it.
+- If no numeric threshold is feasible, treat a change as material if it could change the bottom-line interpretation
+  or an operational decision conveyed by the deliverable.
