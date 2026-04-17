@@ -27,7 +27,7 @@ These tools are a work in progress and designed to help our team
 experiment with developing new methodologies for AI-assisted workflows.
 These tools help to define a repeatable framework of chat instructions
 between sessions and across teams. Tools are provided to create a
-transparent audit trail to evaluate the of AI.
+transparent audit trail to evaluate the use of AI.
 
 **Core ideas:**
 

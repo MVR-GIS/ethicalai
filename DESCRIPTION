@@ -15,7 +15,7 @@ Description: An R package of tools to help teams adopt a reproducible workflow f
   with developing new methodologies for AI-assisted workflows. These tools help to 
   define a repeatable framework of chat instructions between sessions and across 
   teams. Tools are provided to create a transparent audit trail to evaluate the 
-  of AI.
+  use of AI.
 License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
