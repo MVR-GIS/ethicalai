@@ -1,4 +1,11 @@
 
+# Configure `renv`
+install.packages("renv")
+renv::init()
+file.exists("renv.lock")
+renv::snapshot()
+
+
 
 ## Specify Chat Instructions
 reproducibleai::use_instructions(c("chat-manual", "goals", "r-package"))
