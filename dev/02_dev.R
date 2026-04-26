@@ -9,12 +9,14 @@ file.exists("renv.lock")
 ## Workflow to update `renv`
 update.packages()
 renv::snapshot()
+renv::status()
 
 # SBOM
 
 ## Configure SBOM
 use_sbom()
 pak::pak("MVR-GIS/reproducibleai")
+
 
 
 ## Specify Chat Instructions
