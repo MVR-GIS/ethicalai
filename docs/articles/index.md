@@ -5,3 +5,4 @@
 - [Saving Copilot chat session history (audit
   trail)](chat-session-history.md):
 - [Reproducible chat instructions](chat_instructions.md):
+- [SBOM for R Package Repositories (renv + GitHub Actions)](sbom.md):

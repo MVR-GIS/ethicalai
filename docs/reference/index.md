@@ -12,3 +12,7 @@
   instruction compositions ("recipes")
 - [`use_instructions()`](use_instructions.md) : Write selected
   instruction modules into a working directory
+- [`use_sbom()`](use_sbom.md) : Configure an R package repository to
+  generate SBOM artifacts in CI
+- [`write_sbom_env()`](write_sbom_env.md) : Write SBOM environment
+  bundle metadata for an R package repo

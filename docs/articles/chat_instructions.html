@@ -35,6 +35,7 @@
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="../articles/chat-session-history.html">Saving Copilot chat session history (audit trail)</a></li>
     <li><a class="dropdown-item" href="../articles/chat_instructions.html">Reproducible chat instructions</a></li>
+    <li><a class="dropdown-item" href="../articles/sbom.html">SBOM for R Package Repositories (renv + GitHub Actions)</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
@@ -112,13 +113,13 @@ installed with the package:</p>
 <span><span class="co">#&gt; 4   r-package</span></span>
 <span><span class="co">#&gt; 5 shiny-golem</span></span>
 <span><span class="co">#&gt; 6 user-manual</span></span>
-<span><span class="co">#&gt;                                                                                           path</span></span>
-<span><span class="co">#&gt; 1 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/chat-manual.md</span></span>
-<span><span class="co">#&gt; 2       C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/goals.md</span></span>
-<span><span class="co">#&gt; 3 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/quarto-book.md</span></span>
-<span><span class="co">#&gt; 4   C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/r-package.md</span></span>
-<span><span class="co">#&gt; 5 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/shiny-golem.md</span></span>
-<span><span class="co">#&gt; 6 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/user-manual.md</span></span></code></pre></div>
+<span><span class="co">#&gt;                                                                                                                                                         path</span></span>
+<span><span class="co">#&gt; 1 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/chat-manual.md</span></span>
+<span><span class="co">#&gt; 2       C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/goals.md</span></span>
+<span><span class="co">#&gt; 3 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/quarto-book.md</span></span>
+<span><span class="co">#&gt; 4   C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/r-package.md</span></span>
+<span><span class="co">#&gt; 5 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/shiny-golem.md</span></span>
+<span><span class="co">#&gt; 6 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/user-manual.md</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="use-recommended-compositions-recipes">Use recommended compositions (recipes)<a class="anchor" aria-label="anchor" href="#use-recommended-compositions-recipes"></a>
@@ -158,11 +159,11 @@ your working directory is modified:</p>
 <span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">paths</span></span>
-<span><span class="co">#&gt; [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/chat-manual.md"      </span></span>
-<span><span class="co">#&gt; [2] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/goals.md"            </span></span>
-<span><span class="co">#&gt; [3] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/quarto-book.md"      </span></span>
-<span><span class="co">#&gt; [4] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/user-manual.md"      </span></span>
-<span><span class="co">#&gt; [5] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/CHAT_INSTRUCTIONS.md"</span></span>
+<span><span class="co">#&gt; [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/chat-manual.md"      </span></span>
+<span><span class="co">#&gt; [2] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/goals.md"            </span></span>
+<span><span class="co">#&gt; [3] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/quarto-book.md"      </span></span>
+<span><span class="co">#&gt; [4] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/user-manual.md"      </span></span>
+<span><span class="co">#&gt; [5] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/CHAT_INSTRUCTIONS.md"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/list.files.html" class="external-link">list.files</a></span><span class="op">(</span><span class="va">dest</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "chat-manual.md"       "CHAT_INSTRUCTIONS.md" "goals.md"            </span></span>
 <span><span class="co">#&gt; [4] "quarto-book.md"       "user-manual.md"</span></span></code></pre></div>

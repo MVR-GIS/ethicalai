@@ -89,7 +89,7 @@ session_path <- extract_copilot_chat(
 )
 
 session_path
-#> [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpgZUEXi/dev/sessions/2026-04-14_documentation.md"
+#> [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\Rtmp6Fe9rq/dev/sessions/2026-04-14_documentation.md"
 readLines(session_path, warn = FALSE)[1:6]
 #> [1] "# Example Copilot Chat Export"                         
 #> [2] ""                                                      
@@ -146,7 +146,7 @@ list.files(sessions_dir, full.names = FALSE)
 
 backup_dir <- file.path(sessions_dir, ".backups")
 list.files(backup_dir, full.names = FALSE)
-#> [1] "2026-04-14_documentation_backup_20260417_144619.md"
+#> [1] "2026-04-14_documentation_backup_20260426_173300.md"
 ```
 
 ## Cleaning up old backups

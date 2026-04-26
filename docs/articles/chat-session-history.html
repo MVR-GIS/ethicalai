@@ -35,6 +35,7 @@
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="../articles/chat-session-history.html">Saving Copilot chat session history (audit trail)</a></li>
     <li><a class="dropdown-item" href="../articles/chat_instructions.html">Reproducible chat instructions</a></li>
+    <li><a class="dropdown-item" href="../articles/sbom.html">SBOM for R Package Repositories (renv + GitHub Actions)</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
@@ -154,7 +155,7 @@ project.</p>
 <span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">session_path</span></span>
-<span><span class="co">#&gt; [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpgZUEXi/dev/sessions/2026-04-14_documentation.md"</span></span>
+<span><span class="co">#&gt; [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\Rtmp6Fe9rq/dev/sessions/2026-04-14_documentation.md"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/readLines.html" class="external-link">readLines</a></span><span class="op">(</span><span class="va">session_path</span>, warn <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span></span>
 <span><span class="co">#&gt; [1] "# Example Copilot Chat Export"                         </span></span>
 <span><span class="co">#&gt; [2] ""                                                      </span></span>
@@ -207,7 +208,7 @@ and extract again.</p>
 <span></span>
 <span><span class="va">backup_dir</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">sessions_dir</span>, <span class="st">".backups"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/list.files.html" class="external-link">list.files</a></span><span class="op">(</span><span class="va">backup_dir</span>, full.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "2026-04-14_documentation_backup_20260417_144619.md"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "2026-04-14_documentation_backup_20260426_173300.md"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="cleaning-up-old-backups">Cleaning up old backups<a class="anchor" aria-label="anchor" href="#cleaning-up-old-backups"></a>

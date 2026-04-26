@@ -44,13 +44,13 @@ instructions_available(include_path = TRUE)
 #> 4   r-package
 #> 5 shiny-golem
 #> 6 user-manual
-#>                                                                                           path
-#> 1 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/chat-manual.md
-#> 2       C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/goals.md
-#> 3 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/quarto-book.md
-#> 4   C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/r-package.md
-#> 5 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/shiny-golem.md
-#> 6 C:/Users/B5PMMMPD/AppData/Local/R/win-library/4.5/reproducibleai/instructions/user-manual.md
+#>                                                                                                                                                         path
+#> 1 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/chat-manual.md
+#> 2       C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/goals.md
+#> 3 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/quarto-book.md
+#> 4   C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/r-package.md
+#> 5 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/shiny-golem.md
+#> 6 C:/Users/B5PMMMPD/AppData/Local/R/cache/R/renv/library/reproducibleai-f2dbcda7/windows/R-4.5/x86_64-w64-mingw32/reproducibleai/instructions/user-manual.md
 ```
 
 ## Use recommended compositions (recipes)
@@ -94,11 +94,11 @@ paths <- use_instructions(
 )
 
 paths
-#> [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/chat-manual.md"      
-#> [2] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/goals.md"            
-#> [3] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/quarto-book.md"      
-#> [4] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/user-manual.md"      
-#> [5] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpE5zrxh/dev/instructions/CHAT_INSTRUCTIONS.md"
+#> [1] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/chat-manual.md"      
+#> [2] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/goals.md"            
+#> [3] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/quarto-book.md"      
+#> [4] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/user-manual.md"      
+#> [5] "C:\\Users\\B5PMMMPD\\AppData\\Local\\Temp\\1\\RtmpEjdDRY/dev/instructions/CHAT_INSTRUCTIONS.md"
 list.files(dest)
 #> [1] "chat-manual.md"       "CHAT_INSTRUCTIONS.md" "goals.md"            
 #> [4] "quarto-book.md"       "user-manual.md"
