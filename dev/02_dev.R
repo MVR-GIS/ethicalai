@@ -14,7 +14,7 @@ renv::snapshot()
 
 ## Configure SBOM
 use_sbom()
-devtools::install()
+pak::pak("MVR-GIS/reproducibleai")
 
 
 ## Specify Chat Instructions
