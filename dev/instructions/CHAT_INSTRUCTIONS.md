@@ -22,7 +22,7 @@ Overlays are intended to be **thin** and should not duplicate the base modules.
 Selected recipe (R syntax):
 
 ```r
-c("chat-manual", "goals", "r-package")
+c("chat-manual", "goals", "r-package", "user-manual")
 ```
 
 Selected modules (tokens, in order):
@@ -30,6 +30,7 @@ Selected modules (tokens, in order):
 - chat-manual
 - goals
 - r-package
+- user-manual
 
 ## Selected instruction modules (read in order)
 Read these files in order:
@@ -37,6 +38,7 @@ Read these files in order:
 1. `dev/instructions/chat-manual.md`
 2. `dev/instructions/goals.md`
 3. `dev/instructions/r-package.md`
+4. `dev/instructions/user-manual.md`
 
 ## If the assistant cannot read repository files
 If the chat platform cannot access repository files, paste the contents of:
