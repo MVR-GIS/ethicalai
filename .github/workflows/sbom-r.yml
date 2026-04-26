@@ -51,6 +51,9 @@ jobs:
           install.packages("renv")
           renv::restore(prompt = FALSE)
 
+      - name: Create SBOM output directory
+        run: mkdir -p artifacts/sbom
+
       - name: Generate SBOM (Anchore/Syft)
         uses: anchore/sbom-action@v0
         with:
