@@ -147,18 +147,24 @@ try_git_sha <- function() {
 
 #' Compute sha256 hash of a file
 #'
-#' Uses `openssl::sha256()` (recommended for portability). This implies `openssl`
-#' should be available (Suggests is acceptable if only used in CI / tooling).
+#' Uses `openssl::sha256()` when available (recommended for portability). If
+#' `openssl` is not installed, returns a sentinel string rather than erroring.
 #'
 #' @keywords internal
 lockfile_sha256 <- function(path) {
-  if (!requireNamespace("openssl", quietly = TRUE)) {
-    stop(
-      "Package 'openssl' is required to compute sha256. ",
-      "Add it to Suggests or switch to an MD5-based hash.",
-      call. = FALSE
-    )
+  if (!file.exists(path)) {
+    stop("File not found: ", path, call. = FALSE)
   }
-  raw <- readBin(path, what = "raw", n = file.info(path)$size)
+
+  if (!requireNamespace("openssl", quietly = TRUE)) {
+    return("(unavailable; package 'openssl' not installed)")
+  }
+
+  size <- file.info(path)$size
+  if (is.na(size) || size < 0) {
+    stop("Unable to read file size for: ", path, call. = FALSE)
+  }
+
+  raw <- readBin(path, what = "raw", n = size)
   unname(openssl::sha256(raw))
 }

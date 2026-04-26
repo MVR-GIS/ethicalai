@@ -7,7 +7,7 @@
 lockfile_sha256(path)
 }
 \description{
-Uses \code{openssl::sha256()} (recommended for portability). This implies \code{openssl}
-should be available (Suggests is acceptable if only used in CI / tooling).
+Uses \code{openssl::sha256()} when available (recommended for portability). If
+\code{openssl} is not installed, returns a sentinel string rather than erroring.
 }
 \keyword{internal}

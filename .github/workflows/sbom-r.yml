@@ -51,6 +51,9 @@ jobs:
           install.packages("renv")
           renv::restore(prompt = FALSE)
 
+      - name: Install this package
+        run: R CMD INSTALL .
+
       - name: Create SBOM output directory
         run: mkdir -p artifacts/sbom
 
