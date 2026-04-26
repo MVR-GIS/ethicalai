@@ -1,10 +1,20 @@
+# `renv``
 
-# Configure `renv`
+## Configure `renv`
 install.packages("renv")
+update.packages()
 renv::init()
 file.exists("renv.lock")
+
+## Workflow to update `renv`
+update.packages()
 renv::snapshot()
 
+# SBOM
+
+## Configure SBOM
+use_sbom()
+devtools::install()
 
 
 ## Specify Chat Instructions
